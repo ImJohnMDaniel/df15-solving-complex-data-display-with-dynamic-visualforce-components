@@ -1,0 +1,17 @@
+<apex:page controller="HierarchyDisplayExampleController">
+	<apex:pageBlock >
+		<apex:pageBlockSection title="My Hierarchial Skill Display" columns="1" collapsible="false">
+			<apex:pageBlockSectionItem >
+				<apex:pageBlockSection id="availableSkills" columns="1" showHeader="false" collapsible="false">
+	                <apex:outputPanel layout="block" styleClass="bs">
+	                    <apex:outputPanel layout="block" styleClass="panel-body">
+
+	                        <apex:dynamicComponent componentValue="{! theSkillsPanel }" />
+
+	                    </apex:outputPanel>
+	                </apex:outputPanel>
+            	</apex:pageBlockSection>
+			</apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+	</apex:pageBlock>
+</apex:page>
